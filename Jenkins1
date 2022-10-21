@@ -6,7 +6,6 @@ pipeline {
                 echo "Hello World!"
                 bat "echo Hello from the shell"
                 bat "hostname"
-                Print "Date"
             }
         }
     }
