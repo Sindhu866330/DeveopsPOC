@@ -3,7 +3,7 @@ agent any
 stages {
 stage(‘Checkout’) {
 steps {
-checkout([$class: ‘GitSCM’, branches: [[name: ‘*/main’]], extensions: [], userRemoteConfigs: [[url: ‘https://github.com/Sindhu866330/DeveopsPOC.git)
+checkout([$class: ‘GitSCM’, branches: [[name: ‘*/master’]], extensions: [], userRemoteConfigs: [[url: ‘https://github.com/Sindhu866330/DeveopsPOC.git)
 }
 }
 stage (“terraform init”) {
