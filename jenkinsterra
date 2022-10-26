@@ -1,7 +1,7 @@
 pipeline {
 agent any
 stages {
-stage(‘Checkout’) {
+stage(‘Checkout from GIT’) {
 steps {
 checkout([$class: ‘GitSCM’, branches: [[name: ‘*/master’]], extensions: [], userRemoteConfigs: [[url: ‘https://github.com/Sindhu866330/DeveopsPOC.git]]])
 }
